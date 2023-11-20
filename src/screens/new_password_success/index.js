@@ -1,13 +1,8 @@
 import React from 'react';
-import { Image, SafeAreaView, ScrollView, StyleSheet } from 'react-native';
-import { SuccessIcon } from '../../assets';
-import {
-  MediumText
-} from '../../components';
-import {
-  bgWhiteColor,
-  textLightGreyColor
-} from '../../constants/colors';
+import {Image, SafeAreaView, ScrollView, StyleSheet} from 'react-native';
+import {SuccessIcon} from '../../assets';
+import {MediumText} from '../../components';
+import {bgWhiteColor, textLightGreyColor} from '../../constants/colors';
 
 const NewPasswordSuccess = ({navigation}) => {
   return (
@@ -46,10 +41,12 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
   description_text: {
+    width: 260,
     marginTop: 25,
     marginBottom: 20,
     fontSize: 20,
     color: textLightGreyColor,
+    textAlign: 'center',
   },
 });
 

@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     borderBottomColor: textYellowColor,
   },
   blurBox: {
-    fontSize: 36,
+    fontSize: 30,
     color: textYellowColor,
     borderBottomColor: textDarkGreyColor,
   },
