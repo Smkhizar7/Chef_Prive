@@ -1,12 +1,10 @@
-import React, {useState} from 'react';
-import {Image, SafeAreaView, ScrollView, StyleSheet, View} from 'react-native';
-import {LeftArrow} from '../../assets';
+import React, { useState } from 'react';
+import { SafeAreaView, ScrollView, StyleSheet } from 'react-native';
 import {
   BoldText,
-  IconButton,
   InputField,
   MediumText,
-  TouchableButton,
+  TouchableButton
 } from '../../components';
 import {
   bgWhiteColor,

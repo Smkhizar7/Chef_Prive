@@ -1,6 +1,6 @@
-import React, {useEffect, useState, useRef} from 'react';
-import {Image, SafeAreaView, ScrollView, StyleSheet, View} from 'react-native';
-import {AppleLogo, FacebookLogo, GoogleLogo, Logo} from '../../assets';
+import React, { useEffect, useRef, useState } from 'react';
+import { Image, SafeAreaView, ScrollView, StyleSheet, View } from 'react-native';
+import { AppleLogo, FacebookLogo, GoogleLogo, Logo } from '../../assets';
 import {
   BoldText,
   CheckBox,

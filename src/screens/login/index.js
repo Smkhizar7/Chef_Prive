@@ -1,7 +1,7 @@
-import {View, Image, SafeAreaView, StyleSheet, ScrollView} from 'react-native';
-import React, {useState, useEffect} from 'react';
+import React, { useEffect, useState } from 'react';
+import { Image, SafeAreaView, ScrollView, StyleSheet, View } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
-import {Logo, GoogleLogo, AppleLogo, FacebookLogo} from '../../assets';
+import { AppleLogo, FacebookLogo, GoogleLogo, Logo } from '../../assets';
 import {
   BoldText,
   InputField,
@@ -23,7 +23,7 @@ const Login = ({navigation}) => {
   useEffect(() => {
     setTimeout(() => {
       SplashScreen.hide();
-    }, 2000);
+    }, 1000);
   }, []);
 
   return (

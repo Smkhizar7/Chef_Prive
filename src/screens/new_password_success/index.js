@@ -1,17 +1,12 @@
-import React, {useState} from 'react';
-import {Image, SafeAreaView, ScrollView, StyleSheet, View} from 'react-native';
-import {LeftArrow, SuccessIcon} from '../../assets';
+import React from 'react';
+import { Image, SafeAreaView, ScrollView, StyleSheet } from 'react-native';
+import { SuccessIcon } from '../../assets';
 import {
-  BoldText,
-  IconButton,
-  InputField,
-  MediumText,
-  TouchableButton,
+  MediumText
 } from '../../components';
 import {
   bgWhiteColor,
-  textBlackColor,
-  textLightGreyColor,
+  textLightGreyColor
 } from '../../constants/colors';
 
 const NewPasswordSuccess = ({navigation}) => {
