@@ -12,6 +12,7 @@ import {
   TouchableButton,
 } from '../../components';
 import {
+  bgWhiteColor,
   textBlackColor,
   textBlueColor,
   textLightGreyColor,
@@ -62,7 +63,7 @@ const SignUp = ({navigation}) => {
           label={'Password'}
           placeholder={'Password'}
           textContentType={'password'}
-          secureTextEntry={visiblePassword}
+          secureTextEntry={!visiblePassword}
           setSecureTextEntry={setVisiblePassword}
         />
         <InputField
@@ -134,6 +135,7 @@ const SignUp = ({navigation}) => {
 const styles = StyleSheet.create({
   main_container: {
     flex: 1,
+    backgroundColor: bgWhiteColor,
   },
   scroll_container: {
     flex: 1,

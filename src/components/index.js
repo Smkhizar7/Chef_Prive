@@ -8,6 +8,7 @@ import TextButton from './text_button';
 import SelectInput from './select_input';
 import CheckBox from './checkbox';
 import IconButton from './icon_button';
+import OtpInput from './otp_input';
 
 export {
   InputField,
@@ -20,4 +21,5 @@ export {
   SelectInput,
   CheckBox,
   IconButton,
+  OtpInput,
 };

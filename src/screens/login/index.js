@@ -1,5 +1,6 @@
 import {View, Image, SafeAreaView, StyleSheet, ScrollView} from 'react-native';
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
+import SplashScreen from 'react-native-splash-screen';
 import {Logo, GoogleLogo, AppleLogo, FacebookLogo} from '../../assets';
 import {
   BoldText,
@@ -10,6 +11,7 @@ import {
   TouchableButton,
 } from '../../components';
 import {
+  bgWhiteColor,
   textBlackColor,
   textBlueColor,
   textLightGreyColor,
@@ -17,6 +19,13 @@ import {
 
 const Login = ({navigation}) => {
   const [visiblePassword, setVisiblePassword] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      SplashScreen.hide();
+    }, 2000);
+  }, []);
+
   return (
     <SafeAreaView style={styles.main_container}>
       <ScrollView
@@ -35,7 +44,7 @@ const Login = ({navigation}) => {
           label={'Password'}
           placeholder={'Password'}
           textContentType={'password'}
-          secureTextEntry={visiblePassword}
+          secureTextEntry={!visiblePassword}
           setSecureTextEntry={setVisiblePassword}
         />
         <TextButton
@@ -84,6 +93,7 @@ const Login = ({navigation}) => {
 const styles = StyleSheet.create({
   main_container: {
     flex: 1,
+    backgroundColor: bgWhiteColor,
   },
   scroll_container: {
     flex: 1,

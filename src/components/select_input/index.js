@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import SelectDropdown from 'react-native-select-dropdown';
-import { bgWhiteColor, textBlackColor, textYellowColor } from '../../constants/colors';
+import { fieldBgWhiteColor, textBlackColor, textYellowColor } from '../../constants/colors';
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 
 const SelectInput = ({
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     dropdownBtnStyle: {
         width: "100%",
         height: 50,
-        backgroundColor: bgWhiteColor,
+        backgroundColor: fieldBgWhiteColor,
         borderRadius: 5,
         paddingHorizontal: 15,
         paddingVertical: 12,

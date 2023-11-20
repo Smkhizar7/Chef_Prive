@@ -3,11 +3,12 @@ import React from 'react';
 import SemiBoldText from '../semi_bold_text';
 import {buttonBgColor, buttonTextColor} from '../../constants/colors';
 
-const TouchableButton = ({text, textStyle, buttonStyle}) => {
+const TouchableButton = ({text, textStyle, buttonStyle, onPress}) => {
   return (
     <TouchableOpacity
       activeOpacity={0.7}
-      style={{...styles.buttonStyle, ...buttonStyle}}>
+      style={{...styles.buttonStyle, ...buttonStyle}}
+      onPress={onPress}>
       <SemiBoldText text={text} style={{...styles.textStyle, ...textStyle}} />
     </TouchableOpacity>
   );

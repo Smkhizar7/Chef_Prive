@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Image, SafeAreaView, ScrollView, StyleSheet, View} from 'react-native';
 import {LeftArrow} from '../../assets';
 import {
@@ -7,9 +7,10 @@ import {
   InputField,
   TouchableButton,
 } from '../../components';
-import {textBlackColor} from '../../constants/colors';
+import {bgWhiteColor, textBlackColor} from '../../constants/colors';
 
 const ForgetPassword = ({navigation}) => {
+  const [email, setEmail] = useState('');
   return (
     <SafeAreaView style={styles.main_container}>
       <ScrollView
@@ -28,9 +29,15 @@ const ForgetPassword = ({navigation}) => {
           label={'Email'}
           placeholder={'Email Address'}
           textContentType={'emailAddress'}
+          onChangeText={text => {
+            setEmail(text);
+          }}
         />
         <TouchableButton
           text={'NEXT'}
+          onPress={() => {
+            navigation.navigate('Verification', {email});
+          }}
           buttonStyle={styles.ForgetPasswordButton}
         />
       </ScrollView>
@@ -41,6 +48,7 @@ const ForgetPassword = ({navigation}) => {
 const styles = StyleSheet.create({
   main_container: {
     flex: 1,
+    backgroundColor: bgWhiteColor,
   },
   scroll_container: {
     flex: 1,
